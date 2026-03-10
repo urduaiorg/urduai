@@ -3,6 +3,7 @@
   "main": "expo-router/entry",
   "version": "3.0.8",
   "scripts": {
+    "postinstall": "node ./scripts/fix-expo-android-gradle.js",
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
