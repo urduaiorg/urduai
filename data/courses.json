@@ -1,0 +1,1023 @@
+{
+    "courses": [
+        {
+            "id": "ai-masterclass",
+            "title": "Urdu AI Master Class",
+            "titleUr": "اردو اے آئی ماسٹر کلاس",
+            "description": "Complete AI course in Urdu - from basics to advanced tools",
+            "descriptionUr": "اردو میں مکمل اے آئی کورس - بنیادی باتوں سے لے کر جدید ٹولز تک",
+            "instructor": "Qaisar Roonjha",
+            "instructorTitle": "Founder, Urdu AI / WANG Lab of Innovation",
+            "totalVideos": 8,
+            "estimatedHours": 4,
+            "difficulty": "beginner",
+            "passingScore": 70,
+            "certificateTitle": "Urdu AI Master Class - Certified",
+            "certificateTitleUr": "اردو اے آئی ماسٹر کلاس - سند یافتہ",
+            "playlistId": "PL1M1G3ljoNJomH60QdE3dB_KACQwMpfRp",
+            "modules": [
+                {
+                    "id": "module-1",
+                    "title": "Welcome & Introduction",
+                    "titleUr": "خوش آمدید اور تعارف",
+                    "videoId": "lKHkY_Ha8S4",
+                    "duration": "1:23",
+                    "guide": "Welcome to the Urdu AI Master Class! This course is designed by Qaisar Roonjha from Lasbela, Balochistan. The course delivers videos every 2 days and builds a community of Urdu-speaking AI learners.",
+                    "guideUr": "اردو اے آئی ماسٹر کلاس میں خوش آمدید! یہ کورس قیصر رونجھا نے لسبیلہ، بلوچستان سے تیار کیا ہے۔ کورس ہر 2 دن بعد ویڈیوز فراہم کرتا ہے اور اردو بولنے والے اے آئی سیکھنے والوں کی کمیونٹی بناتا ہے۔",
+                    "isIntro": true,
+                    "quiz": []
+                },
+                {
+                    "id": "module-2",
+                    "title": "What is AI?",
+                    "titleUr": "اے آئی کیا ہے؟",
+                    "videoId": "98DsXzUk1mY",
+                    "duration": "19:46",
+                    "guide": "AI is a branch of computer science. It learns through pattern recognition, just like a child learns. There are two types: Predictive AI (old generation - like YouTube recommendations) and Generative AI (new generation - creates new content). The hierarchy is: Science → Computer Science → AI → Machine Learning → Deep Learning.",
+                    "guideUr": "اے آئی کمپیوٹر سائنس کی ایک شاخ ہے۔ یہ پیٹرن کی پہچان کے ذریعے سیکھتی ہے، بالکل جیسے بچہ سیکھتا ہے۔ دو قسمیں ہیں: پریڈکٹو اے آئی (پرانی نسل - جیسے یوٹیوب کی سفارشات) اور جنریٹو اے آئی (نئی نسل - نیا مواد بناتی ہے)۔ درجہ بندی یہ ہے: سائنس ← کمپیوٹر سائنس ← اے آئی ← مشین لرننگ ← ڈیپ لرننگ۔",
+                    "quiz": [
+                        {
+                            "id": "q2-1",
+                            "question": "اے آئی کس کی ایک شاخ ہے؟",
+                            "questionEn": "AI is a branch of what?",
+                            "options": [
+                                "الیکٹریکل انجینئرنگ",
+                                "کمپیوٹر سائنس",
+                                "میکینیکل انجینئرنگ",
+                                "بائیولوجی"
+                            ],
+                            "optionsEn": [
+                                "Electrical Engineering",
+                                "Computer Science",
+                                "Mechanical Engineering",
+                                "Biology"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q2-2",
+                            "question": "اے آئی کیسے سیکھتی ہے؟",
+                            "questionEn": "How does AI learn?",
+                            "options": [
+                                "کتابیں پڑھ کر",
+                                "پیٹرن کی پہچان کے ذریعے",
+                                "انسانوں سے بات کر کے",
+                                "خود سے سوچ کر"
+                            ],
+                            "optionsEn": [
+                                "By reading books",
+                                "Through pattern recognition",
+                                "By talking to humans",
+                                "By thinking on its own"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q2-3",
+                            "question": "پریڈکٹو اے آئی کی مثال کیا ہے؟",
+                            "questionEn": "What is an example of Predictive AI?",
+                            "options": [
+                                "ChatGPT سے خط لکھوانا",
+                                "یوٹیوب کی ویڈیو سفارشات",
+                                "اے آئی سے تصویر بنوانا",
+                                "اے آئی سے کوڈ لکھوانا"
+                            ],
+                            "optionsEn": [
+                                "Getting ChatGPT to write a letter",
+                                "YouTube video recommendations",
+                                "Getting AI to create images",
+                                "Getting AI to write code"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q2-4",
+                            "question": "جنریٹو اے آئی کیا کر سکتی ہے؟",
+                            "questionEn": "What can Generative AI do?",
+                            "options": [
+                                "صرف ڈیٹا ذخیرہ کرنا",
+                                "صرف انٹرنیٹ چلانا",
+                                "نیا مواد بنانا جیسے خط، تصاویر اور کوڈ",
+                                "صرف گیمز کھیلنا"
+                            ],
+                            "optionsEn": [
+                                "Only store data",
+                                "Only browse the internet",
+                                "Create new content like letters, images and code",
+                                "Only play games"
+                            ],
+                            "correct": 2
+                        },
+                        {
+                            "id": "q2-5",
+                            "question": "اے آئی کی درجہ بندی میں مشین لرننگ کہاں آتی ہے؟",
+                            "questionEn": "Where does Machine Learning fit in the AI hierarchy?",
+                            "options": [
+                                "اے آئی سے پہلے",
+                                "ڈیپ لرننگ کے بعد",
+                                "اے آئی کے اندر، ڈیپ لرننگ سے پہلے",
+                                "کمپیوٹر سائنس سے پہلے"
+                            ],
+                            "optionsEn": [
+                                "Before AI",
+                                "After Deep Learning",
+                                "Inside AI, before Deep Learning",
+                                "Before Computer Science"
+                            ],
+                            "correct": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "module-3",
+                    "title": "AI Companies, People & Tools",
+                    "titleUr": "اے آئی کمپنیاں، شخصیات اور ٹولز",
+                    "videoId": "LDMtmvUMZcs",
+                    "duration": "25:57",
+                    "guide": "Major AI companies include OpenAI (ChatGPT), Anthropic (Claude), Google (Gemini), Meta AI, Microsoft (Copilot), xAI (Grok), and Chinese companies like DeepSeek and Alibaba (Qwen). Key people: Sam Altman (OpenAI), Elon Musk (xAI), Dario Amodei (Anthropic), Jensen Huang (NVIDIA). AI tools fall into three categories: Writing & Analysis (ChatGPT, Copilot, Perplexity), Content Creation (Midjourney, DALL-E, Suno), and Coding (Replit, Cursor, GitHub Copilot).",
+                    "guideUr": "بڑی اے آئی کمپنیوں میں اوپن اے آئی (ChatGPT)، اینتھروپک (Claude)، گوگل (Gemini)، میٹا اے آئی، مائیکروسافٹ (Copilot)، xAI (Grok)، اور چینی کمپنیاں جیسے ڈیپ سیک اور علی بابا (Qwen) شامل ہیں۔ اہم شخصیات: سیم آلٹمین (اوپن اے آئی)، ایلون مسک (xAI)، ڈاریو امودی (اینتھروپک)، جینسن ہوانگ (NVIDIA)۔ اے آئی ٹولز تین اقسام میں آتے ہیں: لکھائی اور تجزیہ، مواد کی تخلیق، اور کوڈنگ۔",
+                    "quiz": [
+                        {
+                            "id": "q3-1",
+                            "question": "ChatGPT کس کمپنی نے بنایا ہے؟",
+                            "questionEn": "Which company created ChatGPT?",
+                            "options": [
+                                "گوگل",
+                                "مائیکروسافٹ",
+                                "اوپن اے آئی",
+                                "میٹا"
+                            ],
+                            "optionsEn": [
+                                "Google",
+                                "Microsoft",
+                                "OpenAI",
+                                "Meta"
+                            ],
+                            "correct": 2
+                        },
+                        {
+                            "id": "q3-2",
+                            "question": "LLM کا مطلب کیا ہے؟",
+                            "questionEn": "What does LLM stand for?",
+                            "options": [
+                                "لائٹ لرننگ میتھڈ",
+                                "لارج لینگوئج ماڈل",
+                                "لوکل لرننگ مشین",
+                                "لیٹسٹ لاجک موڈیول"
+                            ],
+                            "optionsEn": [
+                                "Light Learning Method",
+                                "Large Language Model",
+                                "Local Learning Machine",
+                                "Latest Logic Module"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q3-3",
+                            "question": "API کیا ہے؟",
+                            "questionEn": "What is an API?",
+                            "options": [
+                                "ایک قسم کا کمپیوٹر",
+                                "چھوٹی کمپنیوں کو بڑی کمپنیوں سے اے آئی تک رسائی دینے کا طریقہ",
+                                "ایک پروگرامنگ زبان",
+                                "ایک سوشل میڈیا پلیٹ فارم"
+                            ],
+                            "optionsEn": [
+                                "A type of computer",
+                                "A way for smaller companies to access AI from larger companies",
+                                "A programming language",
+                                "A social media platform"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q3-4",
+                            "question": "NVIDIA کس چیز کے لیے مشہور ہے؟",
+                            "questionEn": "What is NVIDIA famous for?",
+                            "options": [
+                                "سوشل میڈیا",
+                                "اے آئی چپس اور پروسیسرز بنانا",
+                                "موبائل فون بنانا",
+                                "ای میل سروس"
+                            ],
+                            "optionsEn": [
+                                "Social media",
+                                "Making AI chips and processors",
+                                "Making mobile phones",
+                                "Email service"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q3-5",
+                            "question": "فری ایپس میں 'آپ پروڈکٹ ہیں' کا مطلب کیا ہے؟",
+                            "questionEn": "What does 'you are the product' mean in free apps?",
+                            "options": [
+                                "آپ کو نوکری ملے گی",
+                                "آپ کا ڈیٹا ایڈورٹائزرز کو بیچا جاتا ہے",
+                                "آپ کو انعام ملے گا",
+                                "آپ کمپنی کے مالک بن جائیں گے"
+                            ],
+                            "optionsEn": [
+                                "You will get a job",
+                                "Your data is sold to advertisers",
+                                "You will get a prize",
+                                "You will become the company owner"
+                            ],
+                            "correct": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "module-4",
+                    "title": "ChatGPT Deep Dive",
+                    "titleUr": "ChatGPT کا تفصیلی استعمال",
+                    "videoId": "3fWWekHBZGA",
+                    "duration": "20:22",
+                    "guide": "ChatGPT features include Reasoning (shows thought process), Search (internet access), and Profile (remembers preferences). Key strategies: Translation between Urdu/English, document analysis and summarization, brainstorming multiple perspectives, and iterative refinement. Quality depends on clarity of instructions, willingness to iterate, adding personal context, and continuous feedback.",
+                    "guideUr": "ChatGPT کی خصوصیات میں ریزننگ (سوچ کا عمل دکھاتا ہے)، سرچ (انٹرنیٹ تک رسائی)، اور پروفائل (ترجیحات یاد رکھتا ہے) شامل ہیں۔ اہم حکمت عملی: اردو/انگریزی ترجمہ، دستاویزات کا تجزیہ اور خلاصہ، متعدد نقطہ نظر سے سوچنا، اور بار بار بہتری۔ معیار آپ کی ہدایات کی وضاحت، بار بار کوشش، ذاتی سیاق و سباق، اور مسلسل فیڈبیک پر منحصر ہے۔",
+                    "quiz": [
+                        {
+                            "id": "q4-1",
+                            "question": "ChatGPT کی ریزننگ فیچر کیا کرتی ہے؟",
+                            "questionEn": "What does ChatGPT's Reasoning feature do?",
+                            "options": [
+                                "تصاویر بناتی ہے",
+                                "جواب دینے سے پہلے سوچ کا عمل دکھاتی ہے",
+                                "گیمز کھیلتی ہے",
+                                "ویڈیو بناتی ہے"
+                            ],
+                            "optionsEn": [
+                                "Creates images",
+                                "Shows the thinking process before answering",
+                                "Plays games",
+                                "Creates videos"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q4-2",
+                            "question": "اے آئی سے اچھا نتیجہ لینے کے لیے سب سے ضروری کیا ہے؟",
+                            "questionEn": "What is most important for getting good results from AI?",
+                            "options": [
+                                "مہنگا کمپیوٹر",
+                                "واضح ہدایات اور بار بار بہتری",
+                                "تیز انٹرنیٹ",
+                                "انگریزی زبان"
+                            ],
+                            "optionsEn": [
+                                "Expensive computer",
+                                "Clear instructions and iterative refinement",
+                                "Fast internet",
+                                "English language"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q4-3",
+                            "question": "ChatGPT کا پروفائل فیچر کیا کرتا ہے؟",
+                            "questionEn": "What does ChatGPT's Profile feature do?",
+                            "options": [
+                                "آپ کی تصویر بناتا ہے",
+                                "آپ کی ترجیحات یاد رکھتا ہے",
+                                "آپ کا پاسورڈ محفوظ کرتا ہے",
+                                "آپ کو نوکری ڈھونڈتا ہے"
+                            ],
+                            "optionsEn": [
+                                "Creates your photo",
+                                "Remembers your preferences",
+                                "Saves your password",
+                                "Finds you a job"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q4-4",
+                            "question": "ChatGPT سے مواد لکھواتے وقت کیا نہیں کرنا چاہیے؟",
+                            "questionEn": "What should you NOT do when writing with ChatGPT?",
+                            "options": [
+                                "بار بار بہتری مانگنا",
+                                "ذاتی تجربات شامل کرنا",
+                                "پہلا جواب بغیر جانچے شائع کرنا",
+                                "مختلف فارمیٹ میں تبدیل کرنا"
+                            ],
+                            "optionsEn": [
+                                "Ask for iterative improvements",
+                                "Include personal experiences",
+                                "Publish the first answer without checking",
+                                "Convert to different formats"
+                            ],
+                            "correct": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "module-5",
+                    "title": "AI Content Creation",
+                    "titleUr": "اے آئی سے مواد تخلیق کرنا",
+                    "videoId": "QOvLxACAclk",
+                    "duration": "34:09",
+                    "guide": "Use AI for brainstorming ideas, creating outlines, iterative improvement, and converting content between formats. Key workflow: Outline → Draft → Personal touch → Format conversion. Use Google Docs voice typing for Urdu dictation. Always fact-check AI output. Use multiple sources and upload authentic reports for analysis.",
+                    "guideUr": "اے آئی کا استعمال آئیڈیاز، خاکہ بنانے، بار بار بہتری، اور مواد کو مختلف فارمیٹ میں تبدیل کرنے کے لیے کریں۔ اہم عمل: خاکہ ← مسودہ ← ذاتی رنگ ← فارمیٹ تبدیلی۔ اردو ڈکٹیشن کے لیے گوگل ڈاکس وائس ٹائپنگ استعمال کریں۔ ہمیشہ اے آئی کے نتائج کی جانچ کریں۔",
+                    "quiz": [
+                        {
+                            "id": "q5-1",
+                            "question": "اے آئی سے لکھنے کا پہلا قدم کیا ہونا چاہیے؟",
+                            "questionEn": "What should be the first step when writing with AI?",
+                            "options": [
+                                "فوری شائع کرنا",
+                                "خاکہ (آؤٹ لائن) بنوانا",
+                                "تصویر بنوانا",
+                                "ویڈیو بنوانا"
+                            ],
+                            "optionsEn": [
+                                "Publish immediately",
+                                "Create an outline",
+                                "Create an image",
+                                "Create a video"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q5-2",
+                            "question": "اے آئی مواد کو مستند بنانے کے لیے کیا شامل کرنا چاہیے؟",
+                            "questionEn": "What should you add to make AI content authentic?",
+                            "options": [
+                                "مزید اے آئی ٹولز",
+                                "ذاتی تجربات اور مقامی حوالے",
+                                "مزید تصاویر",
+                                "لمبے جملے"
+                            ],
+                            "optionsEn": [
+                                "More AI tools",
+                                "Personal experiences and local references",
+                                "More images",
+                                "Longer sentences"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q5-3",
+                            "question": "اے آئی مواد شائع کرنے سے پہلے سب سے ضروری کام کیا ہے؟",
+                            "questionEn": "What is the most important thing before publishing AI content?",
+                            "options": [
+                                "رنگ تبدیل کرنا",
+                                "حقائق کی جانچ (فیکٹ چیکنگ)",
+                                "فونٹ تبدیل کرنا",
+                                "عنوان بڑا کرنا"
+                            ],
+                            "optionsEn": [
+                                "Change colors",
+                                "Fact-checking",
+                                "Change font",
+                                "Make the title bigger"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q5-4",
+                            "question": "ایک مضمون کو کن فارمیٹس میں تبدیل کیا جا سکتا ہے؟",
+                            "questionEn": "What formats can an essay be converted to?",
+                            "options": [
+                                "صرف پی ڈی ایف",
+                                "ویڈیو اسکرپٹ، سوشل میڈیا پوسٹ، نیوز لیٹر",
+                                "صرف تصویر",
+                                "صرف آڈیو"
+                            ],
+                            "optionsEn": [
+                                "Only PDF",
+                                "Video script, social media post, newsletter",
+                                "Only image",
+                                "Only audio"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q5-5",
+                            "question": "اردو میں وائس ٹائپنگ کے لیے کون سا ٹول تجویز کیا گیا؟",
+                            "questionEn": "Which tool was recommended for Urdu voice typing?",
+                            "options": [
+                                "مائیکروسافٹ ورڈ",
+                                "گوگل ڈاکس وائس ٹائپنگ",
+                                "نوٹ پیڈ",
+                                "ایکسل"
+                            ],
+                            "optionsEn": [
+                                "Microsoft Word",
+                                "Google Docs voice typing",
+                                "Notepad",
+                                "Excel"
+                            ],
+                            "correct": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "module-6",
+                    "title": "AI Coding & Development",
+                    "titleUr": "اے آئی سے کوڈنگ اور ڈیولپمنٹ",
+                    "videoId": "Wb5X_uP1Juk",
+                    "duration": "18:49",
+                    "guide": "AI can now write code, build apps, and create websites. Major tools: Replit AI (browser-based, great for beginners), Cursor (AI code editor), GitHub Copilot (code autocomplete), v0 by Vercel (generate web interfaces from text). Non-programmers can now build their ideas. Future focus shifts to problem-solving, product thinking, and AI prompt engineering rather than manual coding.",
+                    "guideUr": "اے آئی اب کوڈ لکھ سکتی ہے، ایپس بنا سکتی ہے، اور ویب سائٹس تخلیق کر سکتی ہے۔ بڑے ٹولز: Replit AI (براؤزر پر، شروع کرنے والوں کے لیے بہترین)، Cursor (اے آئی کوڈ ایڈیٹر)، GitHub Copilot (کوڈ آٹوکمپلیٹ)، v0 از Vercel (ٹیکسٹ سے ویب انٹرفیس)۔ غیر پروگرامرز اب اپنے آئیڈیاز بنا سکتے ہیں۔",
+                    "quiz": [
+                        {
+                            "id": "q6-1",
+                            "question": "Replit AI کیا ہے؟",
+                            "questionEn": "What is Replit AI?",
+                            "options": [
+                                "ایک سوشل میڈیا پلیٹ فارم",
+                                "براؤزر پر چلنے والا کوڈنگ ماحول جہاں قدرتی زبان سے ایپس بنائی جا سکتی ہیں",
+                                "ایک ویڈیو ایڈیٹر",
+                                "ایک ای میل سروس"
+                            ],
+                            "optionsEn": [
+                                "A social media platform",
+                                "Browser-based coding environment where apps can be built with natural language",
+                                "A video editor",
+                                "An email service"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q6-2",
+                            "question": "اے آئی کوڈنگ ٹولز کی وجہ سے مستقبل میں کس چیز کی اہمیت بڑھے گی؟",
+                            "questionEn": "What will become more important due to AI coding tools?",
+                            "options": [
+                                "ٹائپنگ سپیڈ",
+                                "مسئلہ حل کرنا اور پروڈکٹ سوچ",
+                                "حفظ کرنا",
+                                "ہارڈ ویئر کی مرمت"
+                            ],
+                            "optionsEn": [
+                                "Typing speed",
+                                "Problem-solving and product thinking",
+                                "Memorization",
+                                "Hardware repair"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q6-3",
+                            "question": "v0 از Vercel کیا کرتا ہے؟",
+                            "questionEn": "What does v0 by Vercel do?",
+                            "options": [
+                                "ویڈیو بناتا ہے",
+                                "ٹیکسٹ سے ویب انٹرفیس بناتا ہے",
+                                "موسیقی بناتا ہے",
+                                "ای میل بھیجتا ہے"
+                            ],
+                            "optionsEn": [
+                                "Creates videos",
+                                "Generates web interfaces from text",
+                                "Creates music",
+                                "Sends emails"
+                            ],
+                            "correct": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "module-7",
+                    "title": "Advanced Writing with AI",
+                    "titleUr": "اے آئی کے ساتھ جدید لکھائی",
+                    "videoId": "mXGWNDuYpbo",
+                    "duration": "32:01",
+                    "guide": "Core philosophy: Writing WITH AI, not BY AI. Five principles: 1) Have clear intentions before writing, 2) Start with brainstorming, 3) Iterative refinement - never accept first draft, 4) Add your own perspective and viewpoint, 5) Fact-check everything. Advanced techniques: Upload authentic documents for analysis, combine personal stories with data, repurpose content across formats, create quote-based engaging content.",
+                    "guideUr": "بنیادی فلسفہ: اے آئی کے ساتھ لکھنا، نہ کہ اے آئی سے لکھوانا۔ پانچ اصول: 1) لکھنے سے پہلے واضح ارادہ رکھیں، 2) سوچ بچار سے شروع کریں، 3) بار بار بہتری - پہلا مسودہ کبھی قبول نہ کریں، 4) اپنا نقطہ نظر شامل کریں، 5) ہر چیز کی جانچ کریں۔",
+                    "quiz": [
+                        {
+                            "id": "q7-1",
+                            "question": "'اے آئی کے ساتھ لکھنا' اور 'اے آئی سے لکھوانا' میں کیا فرق ہے؟",
+                            "questionEn": "What is the difference between 'writing with AI' and 'writing by AI'?",
+                            "options": [
+                                "کوئی فرق نہیں",
+                                "اے آئی کے ساتھ لکھنے میں آپ کے آئیڈیاز اور اے آئی کی مدد ملتی ہے",
+                                "اے آئی سے لکھوانا بہتر ہے",
+                                "صرف انگریزی میں فرق ہے"
+                            ],
+                            "optionsEn": [
+                                "No difference",
+                                "Writing with AI combines your ideas with AI assistance",
+                                "Writing by AI is better",
+                                "The difference is only in English"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q7-2",
+                            "question": "لکھنے سے پہلے سب سے پہلے کیا ہونا چاہیے؟",
+                            "questionEn": "What should come first before writing?",
+                            "options": [
+                                "فونٹ کا انتخاب",
+                                "واضح ارادہ (نیت) - آپ کیوں لکھ رہے ہیں",
+                                "تصویر بنانا",
+                                "سوشل میڈیا پر شیئر کرنا"
+                            ],
+                            "optionsEn": [
+                                "Choosing the font",
+                                "Clear intention - why you are writing",
+                                "Creating an image",
+                                "Sharing on social media"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q7-3",
+                            "question": "مواد کو مستند بنانے کا بہترین طریقہ کیا ہے؟",
+                            "questionEn": "What is the best way to make content authentic?",
+                            "options": [
+                                "صرف اے آئی پر انحصار کرنا",
+                                "ذاتی کہانیاں اور مستند ڈیٹا کو ملانا",
+                                "لمبے جملے لکھنا",
+                                "مشکل الفاظ استعمال کرنا"
+                            ],
+                            "optionsEn": [
+                                "Only rely on AI",
+                                "Combining personal stories with authentic data",
+                                "Writing long sentences",
+                                "Using difficult words"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q7-4",
+                            "question": "ایک مضمون کو کتنے فارمیٹ میں تبدیل کیا جا سکتا ہے؟",
+                            "questionEn": "How many formats can one essay be converted to?",
+                            "options": [
+                                "صرف ایک",
+                                "صرف دو",
+                                "متعدد - سوشل میڈیا پوسٹ، ویڈیو اسکرپٹ، نیوز لیٹر، تھریڈ",
+                                "صرف پرنٹ"
+                            ],
+                            "optionsEn": [
+                                "Only one",
+                                "Only two",
+                                "Multiple - social media post, video script, newsletter, thread",
+                                "Only print"
+                            ],
+                            "correct": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "module-8",
+                    "title": "AI Avatars",
+                    "titleUr": "اے آئی اوتار",
+                    "videoId": "rPuU8dNk-oY",
+                    "duration": "24:13",
+                    "guide": "AI avatars are AI-generated human-like digital characters that can speak, show expressions, and present content. Benefits: Create content without camera equipment, multi-language support, educational and training uses, marketing and branding. Risks: Lack of human connection, deepfake misuse potential, job displacement for real presenters.",
+                    "guideUr": "اے آئی اوتار ایسے ڈیجیٹل کردار ہیں جو بول سکتے ہیں، تاثرات دکھا سکتے ہیں، اور مواد پیش کر سکتے ہیں۔ فوائد: بغیر کیمرا مواد بنانا، کئی زبانوں کی سپورٹ، تعلیمی استعمال، مارکیٹنگ۔ خطرات: انسانی رابطے کی کمی، ڈیپ فیک کا غلط استعمال، حقیقی پیشکاروں کی ملازمتوں کا خاتمہ۔",
+                    "quiz": [
+                        {
+                            "id": "q8-1",
+                            "question": "اے آئی اوتار کیا ہے؟",
+                            "questionEn": "What is an AI avatar?",
+                            "options": [
+                                "ایک حقیقی انسان",
+                                "اے آئی سے بنایا گیا ڈیجیٹل کردار جو بول اور تاثرات دکھا سکتا ہے",
+                                "ایک کارٹون",
+                                "ایک روبوٹ جو چل سکتا ہے"
+                            ],
+                            "optionsEn": [
+                                "A real human",
+                                "An AI-generated digital character that can speak and show expressions",
+                                "A cartoon",
+                                "A walking robot"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q8-2",
+                            "question": "اے آئی اوتار کا سب سے بڑا فائدہ کیا ہے؟",
+                            "questionEn": "What is the biggest benefit of AI avatars?",
+                            "options": [
+                                "مہنگے ہوتے ہیں",
+                                "بغیر کیمرا، لائٹنگ اور اداکاروں کے مواد بنایا جا سکتا ہے",
+                                "صرف انگریزی میں کام کرتے ہیں",
+                                "صرف تصاویر بنا سکتے ہیں"
+                            ],
+                            "optionsEn": [
+                                "They are expensive",
+                                "Content can be created without camera, lighting and actors",
+                                "They only work in English",
+                                "They can only create images"
+                            ],
+                            "correct": 1
+                        },
+                        {
+                            "id": "q8-3",
+                            "question": "اے آئی اوتار کا سب سے بڑا خطرہ کیا ہے؟",
+                            "questionEn": "What is the biggest risk of AI avatars?",
+                            "options": [
+                                "بجلی زیادہ خرچ ہوتی ہے",
+                                "جعلی خبریں اور ڈیپ فیک کا غلط استعمال",
+                                "آواز خراب ہوتی ہے",
+                                "صرف ایک زبان میں کام کرتے ہیں"
+                            ],
+                            "optionsEn": [
+                                "Uses too much electricity",
+                                "Fake news and deepfake misuse",
+                                "Poor audio quality",
+                                "Only works in one language"
+                            ],
+                            "correct": 1
+                        }
+                    ]
+                }
+            ],
+            "finalExam": {
+                "title": "Final Certification Exam",
+                "titleUr": "حتمی سرٹیفیکیشن امتحان",
+                "description": "Complete exam covering all modules. Pass with 70% to earn your Urdu AI Master Class Certificate.",
+                "descriptionUr": "تمام ماڈیولز پر مشتمل مکمل امتحان۔ اردو اے آئی ماسٹر کلاس سرٹیفکیٹ حاصل کرنے کے لیے 70 فیصد نمبر حاصل کریں۔",
+                "totalQuestions": 20,
+                "timeLimit": 30,
+                "timeLimitUnit": "minutes",
+                "questions": [
+                    {
+                        "id": "fe-1",
+                        "question": "اے آئی کمپیوٹر سائنس کی ایک _____ ہے۔",
+                        "questionEn": "AI is a _____ of Computer Science.",
+                        "options": [
+                            "زبان",
+                            "شاخ",
+                            "کتاب",
+                            "ویب سائٹ"
+                        ],
+                        "optionsEn": [
+                            "Language",
+                            "Branch",
+                            "Book",
+                            "Website"
+                        ],
+                        "correct": 1,
+                        "module": "module-2"
+                    },
+                    {
+                        "id": "fe-2",
+                        "question": "جنریٹو اے آئی اور پریڈکٹو اے آئی میں بنیادی فرق کیا ہے؟",
+                        "questionEn": "What is the fundamental difference between Generative AI and Predictive AI?",
+                        "options": [
+                            "جنریٹو مہنگی ہے",
+                            "پریڈکٹو رویے کی پیشگوئی کرتی ہے جبکہ جنریٹو نیا مواد بناتی ہے",
+                            "کوئی فرق نہیں",
+                            "پریڈکٹو نئی ہے"
+                        ],
+                        "optionsEn": [
+                            "Generative is expensive",
+                            "Predictive predicts behavior while Generative creates new content",
+                            "No difference",
+                            "Predictive is newer"
+                        ],
+                        "correct": 1,
+                        "module": "module-2"
+                    },
+                    {
+                        "id": "fe-3",
+                        "question": "ChatGPT کس کمپنی کا پروڈکٹ ہے؟",
+                        "questionEn": "ChatGPT is a product of which company?",
+                        "options": [
+                            "گوگل",
+                            "ایپل",
+                            "اوپن اے آئی",
+                            "سام سنگ"
+                        ],
+                        "optionsEn": [
+                            "Google",
+                            "Apple",
+                            "OpenAI",
+                            "Samsung"
+                        ],
+                        "correct": 2,
+                        "module": "module-3"
+                    },
+                    {
+                        "id": "fe-4",
+                        "question": "Claude کس کمپنی نے بنایا ہے؟",
+                        "questionEn": "Which company created Claude?",
+                        "options": [
+                            "اوپن اے آئی",
+                            "اینتھروپک",
+                            "میٹا",
+                            "ایمیزون"
+                        ],
+                        "optionsEn": [
+                            "OpenAI",
+                            "Anthropic",
+                            "Meta",
+                            "Amazon"
+                        ],
+                        "correct": 1,
+                        "module": "module-3"
+                    },
+                    {
+                        "id": "fe-5",
+                        "question": "فریمیم ماڈل کیا ہے؟",
+                        "questionEn": "What is a Freemium model?",
+                        "options": [
+                            "سب کچھ مفت",
+                            "بنیادی فیچرز مفت، جدید فیچرز ادائیگی پر",
+                            "سب کچھ ادائیگی پر",
+                            "صرف طلباء کے لیے مفت"
+                        ],
+                        "optionsEn": [
+                            "Everything is free",
+                            "Basic features free, advanced features paid",
+                            "Everything is paid",
+                            "Free only for students"
+                        ],
+                        "correct": 1,
+                        "module": "module-3"
+                    },
+                    {
+                        "id": "fe-6",
+                        "question": "اے آئی سے لکھنے کا صحیح طریقہ کیا ہے؟",
+                        "questionEn": "What is the correct way to write with AI?",
+                        "options": [
+                            "پہلا جواب فوری شائع کرنا",
+                            "واضح ارادہ، خاکہ، ذاتی رنگ، جانچ",
+                            "صرف کاپی پیسٹ",
+                            "صرف انگریزی میں لکھنا"
+                        ],
+                        "optionsEn": [
+                            "Publish first answer immediately",
+                            "Clear intention, outline, personal touch, verification",
+                            "Just copy paste",
+                            "Only write in English"
+                        ],
+                        "correct": 1,
+                        "module": "module-5"
+                    },
+                    {
+                        "id": "fe-7",
+                        "question": "ChatGPT کے سرچ فیچر کا کیا فائدہ ہے؟",
+                        "questionEn": "What is the benefit of ChatGPT's Search feature?",
+                        "options": [
+                            "تصاویر بناتا ہے",
+                            "انٹرنیٹ سے تازہ ترین معلومات تلاش کر سکتا ہے",
+                            "گیمز کھیلتا ہے",
+                            "فون کال کر سکتا ہے"
+                        ],
+                        "optionsEn": [
+                            "Creates images",
+                            "Can search the internet for current information",
+                            "Plays games",
+                            "Can make phone calls"
+                        ],
+                        "correct": 1,
+                        "module": "module-4"
+                    },
+                    {
+                        "id": "fe-8",
+                        "question": "Replit AI کس قسم کا ٹول ہے؟",
+                        "questionEn": "What type of tool is Replit AI?",
+                        "options": [
+                            "تصویر بنانے والا",
+                            "براؤزر پر چلنے والا کوڈنگ ماحول",
+                            "ویڈیو ایڈیٹر",
+                            "میوزک بنانے والا"
+                        ],
+                        "optionsEn": [
+                            "Image creator",
+                            "Browser-based coding environment",
+                            "Video editor",
+                            "Music creator"
+                        ],
+                        "correct": 1,
+                        "module": "module-6"
+                    },
+                    {
+                        "id": "fe-9",
+                        "question": "اے آئی کوڈنگ ٹولز کی وجہ سے کس شعبے میں کمی آئے گی؟",
+                        "questionEn": "Which field will see a decrease due to AI coding tools?",
+                        "options": [
+                            "ڈاکٹری",
+                            "جونیئر ڈیولپمنٹ اور آؤٹ سورسنگ",
+                            "کھیتی باڑی",
+                            "تعلیم"
+                        ],
+                        "optionsEn": [
+                            "Medicine",
+                            "Junior development and outsourcing",
+                            "Agriculture",
+                            "Education"
+                        ],
+                        "correct": 1,
+                        "module": "module-6"
+                    },
+                    {
+                        "id": "fe-10",
+                        "question": "ڈیپ فیک کیا ہے؟",
+                        "questionEn": "What is a deepfake?",
+                        "options": [
+                            "ایک قسم کی اصلی تصویر",
+                            "اے آئی سے بنایا گیا جعلی ویڈیو یا آڈیو جو حقیقی لگے",
+                            "ایک پروگرامنگ زبان",
+                            "ایک سوشل میڈیا ایپ"
+                        ],
+                        "optionsEn": [
+                            "A type of real photo",
+                            "AI-generated fake video or audio that looks real",
+                            "A programming language",
+                            "A social media app"
+                        ],
+                        "correct": 1,
+                        "module": "module-8"
+                    },
+                    {
+                        "id": "fe-11",
+                        "question": "اے آئی اوتار سے کس قسم کا مواد بنایا جا سکتا ہے؟",
+                        "questionEn": "What type of content can be created with AI avatars?",
+                        "options": [
+                            "صرف تصاویر",
+                            "تعلیمی ویڈیوز، ٹریننگ مواد، مارکیٹنگ",
+                            "صرف آڈیو",
+                            "صرف ٹیکسٹ"
+                        ],
+                        "optionsEn": [
+                            "Only images",
+                            "Educational videos, training materials, marketing",
+                            "Only audio",
+                            "Only text"
+                        ],
+                        "correct": 1,
+                        "module": "module-8"
+                    },
+                    {
+                        "id": "fe-12",
+                        "question": "مواد کی جانچ (فیکٹ چیکنگ) کیوں ضروری ہے؟",
+                        "questionEn": "Why is fact-checking important?",
+                        "options": [
+                            "اے آئی ہمیشہ صحیح ہوتی ہے",
+                            "اے آئی حقائق میں غلطیاں کر سکتی ہے",
+                            "فیکٹ چیکنگ ضروری نہیں",
+                            "صرف انگریزی مواد کی جانچ ضروری ہے"
+                        ],
+                        "optionsEn": [
+                            "AI is always correct",
+                            "AI can make factual errors",
+                            "Fact-checking is not necessary",
+                            "Only English content needs checking"
+                        ],
+                        "correct": 1,
+                        "module": "module-5"
+                    },
+                    {
+                        "id": "fe-13",
+                        "question": "Midjourney کس قسم کا اے آئی ٹول ہے؟",
+                        "questionEn": "What type of AI tool is Midjourney?",
+                        "options": [
+                            "کوڈنگ ٹول",
+                            "تصویر بنانے والا ٹول",
+                            "ترجمہ کا ٹول",
+                            "اکاؤنٹنگ ٹول"
+                        ],
+                        "optionsEn": [
+                            "Coding tool",
+                            "Image generation tool",
+                            "Translation tool",
+                            "Accounting tool"
+                        ],
+                        "correct": 1,
+                        "module": "module-3"
+                    },
+                    {
+                        "id": "fe-14",
+                        "question": "11Labs کس کام کے لیے استعمال ہوتا ہے؟",
+                        "questionEn": "What is 11Labs used for?",
+                        "options": [
+                            "کوڈنگ",
+                            "وائس اوور اور آڈیو",
+                            "تصاویر بنانا",
+                            "ڈیٹا بیس"
+                        ],
+                        "optionsEn": [
+                            "Coding",
+                            "Voice-over and audio",
+                            "Creating images",
+                            "Database"
+                        ],
+                        "correct": 1,
+                        "module": "module-3"
+                    },
+                    {
+                        "id": "fe-15",
+                        "question": "کس شخص کو اے آئی کی دنیا کا سب سے ذہین شخص کہا جاتا ہے؟",
+                        "questionEn": "Who is called the smartest person in the AI world?",
+                        "options": [
+                            "ایلون مسک",
+                            "سیم آلٹمین",
+                            "ایلیا سوٹسکیور",
+                            "سندر پچائی"
+                        ],
+                        "optionsEn": [
+                            "Elon Musk",
+                            "Sam Altman",
+                            "Ilya Sutskever",
+                            "Sundar Pichai"
+                        ],
+                        "correct": 2,
+                        "module": "module-3"
+                    },
+                    {
+                        "id": "fe-16",
+                        "question": "اے آئی سے لکھا ہوا مواد ناقابل شناخت کیسے بنتا ہے؟",
+                        "questionEn": "How does AI-written content become undetectable?",
+                        "options": [
+                            "بڑے فونٹ سے",
+                            "ذاتی تجربات، مستند ذرائع، اپنا انداز شامل کرنے سے",
+                            "رنگین تصاویر سے",
+                            "لمبے جملوں سے"
+                        ],
+                        "optionsEn": [
+                            "With large fonts",
+                            "By adding personal experiences, authentic sources, and your own style",
+                            "With colorful images",
+                            "With long sentences"
+                        ],
+                        "correct": 1,
+                        "module": "module-7"
+                    },
+                    {
+                        "id": "fe-17",
+                        "question": "NVIDIA کے بانی کون ہیں؟",
+                        "questionEn": "Who is the founder of NVIDIA?",
+                        "options": [
+                            "سیم آلٹمین",
+                            "جینسن ہوانگ",
+                            "ایلون مسک",
+                            "بل گیٹس"
+                        ],
+                        "optionsEn": [
+                            "Sam Altman",
+                            "Jensen Huang",
+                            "Elon Musk",
+                            "Bill Gates"
+                        ],
+                        "correct": 1,
+                        "module": "module-3"
+                    },
+                    {
+                        "id": "fe-18",
+                        "question": "Suno اور Udio کس کام کے لیے استعمال ہوتے ہیں؟",
+                        "questionEn": "What are Suno and Udio used for?",
+                        "options": [
+                            "کوڈنگ",
+                            "اے آئی سے موسیقی بنانا",
+                            "ترجمہ",
+                            "تصاویر بنانا"
+                        ],
+                        "optionsEn": [
+                            "Coding",
+                            "Creating music with AI",
+                            "Translation",
+                            "Creating images"
+                        ],
+                        "correct": 1,
+                        "module": "module-3"
+                    },
+                    {
+                        "id": "fe-19",
+                        "question": "مشین لرننگ اور ڈیپ لرننگ میں کیا تعلق ہے؟",
+                        "questionEn": "What is the relationship between Machine Learning and Deep Learning?",
+                        "options": [
+                            "دونوں ایک ہی چیز ہیں",
+                            "ڈیپ لرننگ مشین لرننگ کا ایک حصہ ہے",
+                            "مشین لرننگ ڈیپ لرننگ کا حصہ ہے",
+                            "دونوں کا کوئی تعلق نہیں"
+                        ],
+                        "optionsEn": [
+                            "Both are the same thing",
+                            "Deep Learning is a part of Machine Learning",
+                            "Machine Learning is a part of Deep Learning",
+                            "They have no relation"
+                        ],
+                        "correct": 1,
+                        "module": "module-2"
+                    },
+                    {
+                        "id": "fe-20",
+                        "question": "Perplexity AI کس کیٹیگری میں آتا ہے؟",
+                        "questionEn": "Which category does Perplexity AI fall into?",
+                        "options": [
+                            "تصویر بنانے والا",
+                            "لکھائی، تجزیہ اور وضاحت",
+                            "کوڈنگ",
+                            "ویڈیو بنانے والا"
+                        ],
+                        "optionsEn": [
+                            "Image creation",
+                            "Writing, analysis and explanation",
+                            "Coding",
+                            "Video creation"
+                        ],
+                        "correct": 1,
+                        "module": "module-3"
+                    }
+                ]
+            }
+        }
+    ]
+}

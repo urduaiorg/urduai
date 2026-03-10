@@ -1,0 +1,51 @@
+[
+    {
+        "id": "ai-fundamentals",
+        "title": "AI Fundamentals",
+        "titleUr": "بنیادی مصنوعی ذہانت",
+        "enrolled": 107,
+        "level": "Beginner"
+    },
+    {
+        "id": "ai-brainstorming",
+        "title": "AI for Brainstorming and Planning",
+        "titleUr": "دماغی طوفان اور منصوبہ بندی کے لیے AI",
+        "enrolled": 41,
+        "level": "Beginner"
+    },
+    {
+        "id": "ai-research",
+        "title": "AI for Research and Insights",
+        "titleUr": "تحقیق اور بصیرت کے لیے AI",
+        "enrolled": 33,
+        "level": "Beginner"
+    },
+    {
+        "id": "ai-writing",
+        "title": "AI for Writing and Communicating",
+        "titleUr": "تحریر اور ابلاغ کے لیے AI",
+        "enrolled": 25,
+        "level": "Beginner"
+    },
+    {
+        "id": "ai-content",
+        "title": "AI for Content Creation",
+        "titleUr": "مواد کی تخلیق کے لیے AI",
+        "enrolled": 28,
+        "level": "Intermediate"
+    },
+    {
+        "id": "ai-data",
+        "title": "AI for Data Analysis",
+        "titleUr": "ڈیٹا تجزیہ کے لیے AI",
+        "enrolled": 28,
+        "level": "Intermediate"
+    },
+    {
+        "id": "ai-app-building",
+        "title": "AI for App Building",
+        "titleUr": "ایپ بنانے کے لیے AI",
+        "enrolled": 27,
+        "level": "Intermediate"
+    }
+]

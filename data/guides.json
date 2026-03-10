@@ -1,0 +1,92 @@
+[
+  {
+    "id": "chatgpt-urdu",
+    "title": "ChatGPT Urdu Guide",
+    "titleUr": "چیٹ جی پی ٹی اردو گائیڈ",
+    "description": "Learn how to use ChatGPT effectively in Urdu",
+    "descriptionUr": "اردو میں ChatGPT استعمال کرنا سیکھیں",
+    "driveFileId": "1_n3sJ94JKi2ek8GL6nqtEYp9jTPyLD4a",
+    "category": "beginner",
+    "icon": "chatbubbles"
+  },
+  {
+    "id": "urdu-ai-general",
+    "title": "Urdu AI General Guide",
+    "titleUr": "اردو اے آئی عمومی گائیڈ",
+    "description": "Foundational guide for understanding AI in Urdu",
+    "descriptionUr": "اردو میں AI سمجھنے کی بنیادی گائیڈ",
+    "driveFileId": "1m1RAP8AufmHcn503JwGYtVv3uOyFsq5U",
+    "category": "beginner",
+    "icon": "book"
+  },
+  {
+    "id": "whatsapp-ai",
+    "title": "WhatsApp AI Guide",
+    "titleUr": "واٹس ایپ اے آئی گائیڈ",
+    "description": "Use AI tools with WhatsApp",
+    "descriptionUr": "واٹس ایپ کے ساتھ AI ٹولز استعمال کریں",
+    "driveFileId": "1azs5Uwq-lnnswyZU7-Rxe61gZfP5VDl_",
+    "category": "beginner",
+    "icon": "logo-whatsapp"
+  },
+  {
+    "id": "chatgpt-advanced",
+    "title": "ChatGPT Advanced Guide",
+    "titleUr": "چیٹ جی پی ٹی ایڈوانسڈ گائیڈ",
+    "description": "Advanced ChatGPT techniques and prompts",
+    "descriptionUr": "ChatGPT کی جدید تکنیک اور پرامپٹس",
+    "driveFileId": "1lizSX2THsB1LwBdzrX5ZqA4sbugKk_Bj",
+    "category": "intermediate",
+    "icon": "rocket"
+  },
+  {
+    "id": "image-generation",
+    "title": "AI Image Generation Guide",
+    "titleUr": "AI سے تصویر بنانے کی گائیڈ",
+    "description": "Create images using AI tools",
+    "descriptionUr": "AI ٹولز سے تصاویر بنائیں",
+    "driveFileId": "1g0Eg8slrT9UTiz0mlgIcKXBszoj5v9Mz",
+    "category": "intermediate",
+    "icon": "image"
+  },
+  {
+    "id": "ai-viewer",
+    "title": "AI Viewer Guide",
+    "titleUr": "AI ویور گائیڈ",
+    "description": "Understanding AI visual tools",
+    "descriptionUr": "AI بصری ٹولز کو سمجھیں",
+    "driveFileId": "1eTU4o8Y71J3J9W_d4OmvNo9AxDbNO3Pe",
+    "category": "intermediate",
+    "icon": "eye"
+  },
+  {
+    "id": "google-ai-studio",
+    "title": "Google AI Studio Guide",
+    "titleUr": "گوگل AI اسٹوڈیو گائیڈ",
+    "description": "Learn Google AI Studio step by step",
+    "descriptionUr": "Google AI Studio قدم بہ قدم سیکھیں",
+    "driveFileId": "1V0uDAf-zqCdARaP94EfT4Ra9D1SfhVAr",
+    "category": "intermediate",
+    "icon": "logo-google"
+  },
+  {
+    "id": "google-nano-creative",
+    "title": "Google Nano Creative Use Cases",
+    "titleUr": "گوگل نینو تخلیقی استعمال",
+    "description": "Creative use cases with Google Nano AI",
+    "descriptionUr": "Google Nano AI کے تخلیقی استعمالات",
+    "driveFileId": "1rg7b8vYGJpImoWfa3kye4d9OBISqjV0W",
+    "category": "advanced",
+    "icon": "bulb"
+  },
+  {
+    "id": "web-dev-ai",
+    "title": "Web Development with AI",
+    "titleUr": "AI کے ساتھ ویب ڈویلپمنٹ",
+    "description": "Build websites using AI assistance",
+    "descriptionUr": "AI کی مدد سے ویب سائٹس بنائیں",
+    "driveFileId": "1IEeHUhn4XCrZHGF_GFkf-kDFBs520H6_",
+    "category": "advanced",
+    "icon": "code-slash"
+  }
+]

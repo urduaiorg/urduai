@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.yourname.urduaiwebwrapperfixed",
+      "sha256_cert_fingerprints": [
+        "A5:B8:AD:97:41:51:EA:84:AC:A5:5A:EF:59:A1:3A:5E:FC:DB:9E:22"
+      ]
+    }
+  }
+]
