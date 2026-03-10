@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator, Alert, Platform } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator, Alert } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import { Ionicons } from '@expo/vector-icons';
@@ -18,6 +18,8 @@ import {
 } from '../services/downloadManager';
 import { checkAndAwardBadges } from '../services/badgeService';
 import BadgeCelebration from '../components/BadgeCelebration';
+import AppHeader from '../components/AppHeader';
+import GlowButton from '../components/GlowButton';
 
 // Split guides by category
 const beginnerGuides = guidesData.filter(g => g.category === 'beginner');
@@ -243,23 +245,13 @@ export default function LibraryScreen() {
         <LinearGradient colors={['#003366', '#001933']} style={styles.container}>
             <StatusBar style="light" backgroundColor="#003366" />
 
-            {/* Header Area */}
-            <View style={styles.header}>
-                <TouchableOpacity onPress={handleBack} style={styles.backButtonTop}>
-                    <Text style={styles.backEmoji}>←</Text>
-                    <Text style={styles.backText}>Back</Text>
-                </TouchableOpacity>
-
-                <View style={styles.logoRow}>
-                    <Ionicons name="library" size={28} color="#FFD700" style={{ marginRight: 10 }} />
-                    <Text style={styles.headerLogoWhite}>
-                        AI <Text style={styles.headerLogoGold}>Library</Text>
-                    </Text>
-                </View>
-
-                <Text style={styles.headerSubtitle}>9 Free Guides • Read Offline</Text>
-                <Text style={styles.headerSubtitleUrdu}>مفت گائیڈز • آف لائن پڑھیں</Text>
-            </View>
+            <AppHeader
+                leftAction={{ label: 'ہوم', icon: 'home-outline', onPress: () => router.replace('/') }}
+                rightAction={{ label: 'واپس', icon: 'arrow-back', onPress: handleBack }}
+                titleMain="AI"
+                titleAccent="Library"
+                subtitle="9 Free Guides • Read Offline"
+            />
 
             <ScrollView contentContainerStyle={styles.scrollContent}>
 
@@ -293,10 +285,13 @@ export default function LibraryScreen() {
                         Storage used: <Text style={styles.storageSize}>{totalSize} MB</Text>
                     </Text>
                     <View style={styles.storageButtonsRow}>
-                        <TouchableOpacity style={styles.storageBtnDownload} onPress={handleDownloadAll}>
-                            <Ionicons name="cloud-download" size={16} color="#003366" style={{ marginRight: 6 }} />
-                            <Text style={styles.storageBtnDownloadText}>Download All</Text>
-                        </TouchableOpacity>
+                        <GlowButton
+                            label="تمام گائیڈز ڈاؤنلوڈ کریں"
+                            icon="cloud-download-outline"
+                            onPress={handleDownloadAll}
+                            size="md"
+                            style={styles.storageBtnDownload}
+                        />
 
                         <TouchableOpacity style={styles.storageBtnDelete} onPress={handleDeleteAll}>
                             <Ionicons name="trash" size={16} color="rgba(255,255,255,0.7)" style={{ marginRight: 6 }} />
@@ -320,25 +315,6 @@ export default function LibraryScreen() {
 
 const styles = StyleSheet.create({
     container: { flex: 1, backgroundColor: '#003366' },
-
-    // Header
-    header: {
-        paddingTop: Platform.OS === 'ios' ? 60 : 50,
-        paddingBottom: 20,
-        alignItems: 'center',
-        borderBottomWidth: 1,
-        borderBottomColor: 'rgba(255,255,255,0.1)',
-        backgroundColor: 'rgba(0,0,0,0.2)'
-    },
-    backButtonTop: { position: 'absolute', top: Platform.OS === 'ios' ? 60 : 50, left: 20, zIndex: 10, flexDirection: 'row', alignItems: 'center' },
-    backEmoji: { color: '#FFD700', fontSize: 22, marginRight: 4, fontWeight: 'bold' },
-    backText: { color: '#fff', fontSize: 16, fontFamily: 'Montserrat-Regular' },
-
-    logoRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 10, marginTop: 5 },
-    headerLogoWhite: { color: '#FFF', fontFamily: 'Montserrat-Bold', fontSize: 26, letterSpacing: 1 },
-    headerLogoGold: { color: '#FFD700', fontFamily: 'Montserrat-Bold', fontSize: 26, letterSpacing: 1 },
-    headerSubtitle: { color: '#FFF', fontFamily: 'Montserrat-Regular', fontSize: 14, opacity: 0.9 },
-    headerSubtitleUrdu: { color: '#FFD700', fontFamily: 'Montserrat-Regular', fontSize: 13, marginTop: 4 },
 
     scrollContent: { padding: 16, paddingBottom: 40 },
 
@@ -371,9 +347,8 @@ const styles = StyleSheet.create({
     storageCard: { marginTop: 30, backgroundColor: 'rgba(0,0,0,0.3)', padding: 20, borderRadius: 16, borderWidth: 1, borderColor: 'rgba(255,255,255,0.05)' },
     storageText: { color: 'rgba(255,255,255,0.7)', fontFamily: 'Montserrat-Regular', fontSize: 14, textAlign: 'center', marginBottom: 20 },
     storageSize: { color: '#FFD700', fontFamily: 'Montserrat-Bold' },
-    storageButtonsRow: { flexDirection: 'row', justifyContent: 'space-between' },
-    storageBtnDownload: { flex: 1, backgroundColor: '#FFD700', flexDirection: 'row', paddingVertical: 14, borderRadius: 8, justifyContent: 'center', alignItems: 'center', marginRight: 10 },
-    storageBtnDownloadText: { color: '#003366', fontFamily: 'Montserrat-Bold', fontSize: 13 },
+    storageButtonsRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+    storageBtnDownload: { flex: 1, marginRight: 10 },
     storageBtnDelete: { flex: 1, backgroundColor: 'rgba(234, 67, 53, 0.2)', flexDirection: 'row', paddingVertical: 14, borderRadius: 8, justifyContent: 'center', alignItems: 'center', borderWidth: 1, borderColor: 'rgba(234, 67, 53, 0.5)' },
     storageBtnDeleteText: { color: 'rgba(255,255,255,0.8)', fontFamily: 'Montserrat-Bold', fontSize: 13 }
 });

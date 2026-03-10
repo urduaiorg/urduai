@@ -17,6 +17,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import { getStreakData } from '../services/streakService';
 import { getBadgesForDisplay, checkAndAwardBadges } from '../services/badgeService';
 import { Ionicons } from '@expo/vector-icons';
+import GlowButton from '../components/GlowButton';
 
 export default function App() {
   const { t, isRTL } = useLocalization();
@@ -94,7 +95,6 @@ export default function App() {
     <LinearGradient colors={['#003366', '#001933']} style={styles.container}>
       <StatusBarExpo style="light" backgroundColor="#003366" />
 
-      {/* Restored Native Streak Header */}
       <View pointerEvents="box-none" style={styles.headerWrapper}>
         <View style={styles.headerContent}>
           <TouchableOpacity activeOpacity={0.85} onPress={() => router.push('/achievements')} style={styles.streakPillContainer}>
@@ -114,6 +114,7 @@ export default function App() {
 
           {/* Hero Section */}
           <View style={styles.heroSection}>
+            <View style={styles.heroHalo} />
             <Text style={styles.heroTitle}>Urdu <Text style={{ color: '#FFD700' }}>Ai</Text> کی تازہ اپڈیٹس</Text>
             <Text style={styles.heroSubtitle}>اے آئی کی دنیا کی تازہ اپڈیٹس آسان الفاظ میں۔</Text>
           </View>
@@ -241,9 +242,7 @@ export default function App() {
                     <Ionicons name="play" size={32} color="#000" />
                   </View>
                   <Text style={styles.videoOverlayTitle}>گوگل نے نینو بنانا 2 جاری کر دیا، متن کی تفصیلات</Text>
-                  <View style={styles.videoButton}>
-                    <Text style={styles.videoButtonText}>تمام ویڈیوز دیکھیں 🎬</Text>
-                  </View>
+                  <GlowButton label="تمام ویڈیوز دیکھیں" icon="film" onPress={() => router.push('/ai-videos')} style={styles.videoButton} />
                 </View>
               </TouchableOpacity>
             </>
@@ -277,58 +276,76 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   streakPillContainer: {
-    borderRadius: 20,
+    borderRadius: 26,
     borderWidth: 1,
-    borderColor: '#FFD700',
+    borderColor: 'rgba(255,216,77,0.95)',
     overflow: 'hidden',
-    backgroundColor: 'rgba(0, 51, 102, 0.8)',
+    backgroundColor: 'rgba(51, 91, 98, 0.92)',
+    shadowColor: '#FFD84D',
+    shadowOpacity: 0.28,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 8,
   },
   streakPill: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    gap: 6,
+    paddingHorizontal: 26,
+    paddingVertical: 12,
+    gap: 8,
   },
-  streakText: { color: '#FFD700', fontFamily: 'Montserrat-Bold', fontSize: 14 },
-  badgeText: { color: '#FFD700', fontFamily: 'Montserrat-Bold', fontSize: 14 },
-  streakDivider: { color: 'rgba(255, 215, 0, 0.5)', marginHorizontal: 4, fontSize: 14 },
-  streakEmoji: { fontSize: 14 },
+  streakText: { color: '#FFE168', fontFamily: 'Montserrat-Bold', fontSize: 15 },
+  badgeText: { color: '#FFE168', fontFamily: 'Montserrat-Bold', fontSize: 15 },
+  streakDivider: { color: 'rgba(255, 225, 104, 0.48)', marginHorizontal: 4, fontSize: 15 },
+  streakEmoji: { fontSize: 16 },
   safeArea: {
     flex: 1,
     paddingTop: Platform.OS === 'android' ? 70 : 100,
   },
   scrollContent: {
     paddingHorizontal: 16,
-    paddingTop: 10,
+    paddingTop: 18,
+    paddingBottom: 36,
   },
   heroSection: {
     alignItems: 'center',
     marginBottom: 24,
+    position: 'relative',
+    paddingTop: 8,
+  },
+  heroHalo: {
+    position: 'absolute',
+    top: -10,
+    width: 280,
+    height: 160,
+    borderRadius: 999,
+    backgroundColor: 'rgba(96, 170, 229, 0.08)',
   },
   heroTitle: {
     fontFamily: 'Montserrat-Bold',
-    fontSize: 26,
+    fontSize: 30,
     color: '#FFFFFF',
-    marginBottom: 6,
+    marginBottom: 10,
     textAlign: 'center',
+    lineHeight: 44,
   },
   heroSubtitle: {
     fontFamily: 'Montserrat-Regular',
-    fontSize: 14,
-    color: '#A0B4C8',
+    fontSize: 16,
+    color: '#B0C2D5',
     textAlign: 'center',
+    lineHeight: 28,
   },
   searchContainer: {
     flexDirection: 'row-reverse',
     alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.08)',
-    borderRadius: 24,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
+    backgroundColor: 'rgba(255, 255, 255, 0.06)',
+    borderRadius: 28,
+    paddingHorizontal: 18,
+    paddingVertical: 14,
     marginBottom: 26,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
+    borderColor: 'rgba(255, 255, 255, 0.09)',
   },
   searchText: {
     flex: 1,
@@ -354,14 +371,18 @@ const styles = StyleSheet.create({
   },
   statBox: {
     flex: 1,
-    backgroundColor: 'rgba(13, 58, 102, 0.6)',
-    borderRadius: 16,
-    paddingVertical: 16,
+    backgroundColor: 'rgba(16, 60, 106, 0.72)',
+    borderRadius: 24,
+    paddingVertical: 20,
     paddingHorizontal: 8,
     marginHorizontal: 4,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
+    borderColor: 'rgba(255, 255, 255, 0.08)',
     alignItems: 'center',
+    shadowColor: '#032246',
+    shadowOpacity: 0.22,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 6 },
   },
   statValueYellow: {
     fontFamily: 'Montserrat-Bold',
@@ -376,10 +397,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   newsCard: {
-    backgroundColor: 'rgba(13, 58, 102, 0.6)',
-    borderRadius: 16,
+    backgroundColor: 'rgba(13, 58, 102, 0.7)',
+    borderRadius: 30,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
+    borderColor: 'rgba(255, 215, 0, 0.18)',
     marginBottom: 20,
     overflow: 'hidden',
   },
@@ -563,12 +584,12 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   videoCard: {
-    borderRadius: 16,
+    borderRadius: 28,
     overflow: 'hidden',
-    height: 200,
+    height: 250,
     marginBottom: 20,
     borderWidth: 1,
-    borderColor: 'rgba(255, 215, 0, 0.3)',
+    borderColor: 'rgba(255, 215, 0, 0.18)',
   },
   videoCardBgImage: {
     ...StyleSheet.absoluteFillObject,
@@ -595,22 +616,15 @@ const styles = StyleSheet.create({
   videoOverlayTitle: {
     color: '#FFFFFF',
     fontFamily: 'Montserrat-Bold',
-    fontSize: 20,
+    fontSize: 24,
     textAlign: 'center',
     width: '100%',
     marginTop: 10,
+    lineHeight: 34,
   },
   videoButton: {
-    backgroundColor: '#FFB800',
     width: '100%',
-    paddingVertical: 14,
-    borderRadius: 24,
-    alignItems: 'center',
-  },
-  videoButtonText: {
-    color: '#000000',
-    fontFamily: 'Montserrat-Bold',
-    fontSize: 16,
+    marginTop: 6,
   },
   loadingOverlay: {
     position: 'absolute',

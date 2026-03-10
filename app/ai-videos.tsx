@@ -5,7 +5,6 @@ import {
   View,
   Text,
   TouchableOpacity,
-  Platform,
   Share,
   ActivityIndicator,
   Image,
@@ -20,6 +19,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRouter } from 'expo-router';
 
 import GlassCard from '../components/GlassCard';
+import AppHeader from '../components/AppHeader';
 import PrimaryButton from '../components/PrimaryButton';
 import { fetchLatestYouTubeVideos, type YouTubeFeedVideo } from '../services/youtubeFeed';
 import { courseCatalog } from '../data/courseCatalog';
@@ -157,23 +157,10 @@ export default function AiVideosPage() {
   return (
     <LinearGradient colors={['#003366', '#001933']} style={styles.container}>
       <StatusBar style="light" backgroundColor="#003366" />
-
-      <LinearGradient colors={['#003366', '#001933']} style={styles.header}>
-        <TouchableOpacity onPress={handleBack} style={styles.backButton}>
-          <Text style={styles.backEmoji}>←</Text>
-          <Text style={styles.backText}>واپس</Text>
-        </TouchableOpacity>
-
-        <Text style={styles.headerTitle}>
-          <Text style={styles.headerUrduText}>Urdu </Text>
-          <Text style={styles.headerAiText}>Ai</Text>
-        </Text>
-
-        <TouchableOpacity onPress={handleHome} style={styles.homeButton}>
-          <Ionicons name="home-outline" size={18} color="#FFD700" />
-          <Text style={styles.homeText}>ہوم</Text>
-        </TouchableOpacity>
-      </LinearGradient>
+      <AppHeader
+        leftAction={{ label: 'ہوم', icon: 'home-outline', onPress: handleHome }}
+        rightAction={{ label: 'واپس', icon: 'arrow-back', onPress: handleBack }}
+      />
 
       <ScrollView
         style={styles.scrollView}
@@ -345,60 +332,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  header: {
-    paddingTop: 45,
-    paddingBottom: 15,
-    paddingHorizontal: 16,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.1)',
-  },
-  backButton: {
-    width: 80,
-    paddingVertical: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  backEmoji: {
-    color: '#FFD700',
-    fontSize: 18,
-    marginRight: 4,
-  },
-  backText: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: '700',
-    includeFontPadding: false,
-  },
-  headerTitle: {
-    textAlign: 'center',
-  },
-  headerUrduText: {
-    color: '#FFFFFF',
-    fontFamily: 'Montserrat-Bold',
-    fontSize: 20,
-  },
-  headerAiText: {
-    color: '#FFD700',
-    fontFamily: 'Montserrat-Bold',
-    fontSize: 20,
-  },
-  homeButton: {
-    width: 80,
-    paddingVertical: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    gap: 6,
-  },
-  homeText: {
-    color: '#FFFFFF',
-    fontSize: 15,
-    fontWeight: '700',
-    includeFontPadding: false,
-  },
   scrollView: {
     flex: 1,
   },
@@ -410,6 +343,13 @@ const styles = StyleSheet.create({
   heroCard: {
     padding: 22,
     borderRadius: 28,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.08)',
+    shadowColor: '#03152D',
+    shadowOpacity: 0.32,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 12 },
+    elevation: 8,
   },
   heroEyebrow: {
     color: '#FFD700',

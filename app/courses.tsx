@@ -1,11 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Platform } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Haptics from 'expo-haptics';
+import AppHeader from '../components/AppHeader';
+import GlowButton from '../components/GlowButton';
 
 import { courseCatalog } from '../data/courseCatalog';
 import { getEarnedBadges, BADGE_DEFINITIONS } from '../services/badgeService';
@@ -114,20 +116,10 @@ export default function CoursesCatalogScreen() {
   return (
     <LinearGradient colors={['#003366', '#001933']} style={styles.container}>
       <StatusBar style="light" backgroundColor="#003366" />
-
-      <View style={styles.header}>
-        <TouchableOpacity onPress={handleBack} style={styles.backButton}>
-          <Text style={styles.backText}>واپس</Text>
-          <Text style={styles.backEmoji}>←</Text>
-        </TouchableOpacity>
-
-        <Text style={styles.headerTitle}>
-          <Text style={styles.headerUrduText}>Urdu </Text>
-          <Text style={styles.headerAiText}>AI</Text>
-        </Text>
-
-        <View style={{ width: 80 }} />
-      </View>
+      <AppHeader
+        leftAction={{ label: 'ہوم', icon: 'home-outline', onPress: () => router.replace('/') }}
+        rightAction={{ label: 'واپس', icon: 'arrow-back', onPress: handleBack }}
+      />
 
       <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
         <View style={styles.heroCard}>
@@ -151,16 +143,12 @@ export default function CoursesCatalogScreen() {
             </Text>
 
             {flagshipCourse ? (
-              <TouchableOpacity
+              <GlowButton
+                label="مرکزی ماسٹر کلاس جاری رکھیں"
+                icon="ribbon"
                 onPress={() => handleOpenCourse(flagshipCourse.id)}
                 style={styles.heroAction}
-                activeOpacity={0.85}
-              >
-                <LinearGradient colors={['#FFD700', '#FFA500']} style={styles.heroActionGradient}>
-                  <Ionicons name="ribbon" size={18} color="#003366" style={{ marginRight: 8 }} />
-                  <Text style={styles.heroActionText}>مرکزی ماسٹر کلاس جاری رکھیں</Text>
-                </LinearGradient>
-              </TouchableOpacity>
+              />
             ) : null}
           </LinearGradient>
         </View>
@@ -272,48 +260,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  header: {
-    paddingTop: Platform.OS === 'ios' ? 50 : 45,
-    paddingBottom: 16,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.1)',
-  },
-  backButton: {
-    minWidth: 84,
-    paddingVertical: 8,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-  },
-  backEmoji: {
-    color: '#FFD700',
-    fontSize: 18,
-    marginLeft: 6,
-  },
-  backText: {
-    color: '#fff',
-    fontSize: 15,
-    fontFamily: 'Montserrat-SemiBold',
-  },
-  headerTitle: {
-    textAlign: 'center',
-  },
-  headerUrduText: {
-    color: '#FFFFFF',
-    fontFamily: 'Montserrat-Bold',
-    fontWeight: '900',
-    fontSize: 20,
-  },
-  headerAiText: {
-    color: '#FFD700',
-    fontFamily: 'Montserrat-Bold',
-    fontWeight: '900',
-    fontSize: 20,
-  },
   scrollView: {
     flex: 1,
   },
@@ -326,11 +272,17 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     marginBottom: 32,
     borderWidth: 1,
-    borderColor: 'rgba(255,215,0,0.28)',
+    borderColor: 'rgba(255,215,0,0.2)',
+    shadowColor: '#00162D',
+    shadowOpacity: 0.35,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 12 },
+    elevation: 8,
   },
   heroGradient: {
     paddingHorizontal: 24,
     paddingVertical: 26,
+    backgroundColor: 'rgba(12, 47, 86, 0.44)',
   },
   heroTopRow: {
     flexDirection: 'row',
@@ -384,19 +336,6 @@ const styles = StyleSheet.create({
   },
   heroAction: {
     marginTop: 24,
-    borderRadius: 999,
-    overflow: 'hidden',
-  },
-  heroActionGradient: {
-    minHeight: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-  },
-  heroActionText: {
-    color: '#003366',
-    fontFamily: 'Montserrat-Bold',
-    fontSize: 15,
   },
   sectionHeader: {
     marginBottom: 16,

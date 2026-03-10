@@ -6,12 +6,14 @@ import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import * as Haptics from 'expo-haptics';
 // import Share from 'react-native-share';
-const Share: any = { shareSingle: async () => { }, Social: {} };
+const Share: any = { open: async () => { }, shareSingle: async () => { }, Social: {} };
 
 import scholarshipCourses from '../data/scholarshipCourses.json';
 import { hasCourseCompletion, getSpotsInfo, getApplicationStatus, applyForScholarship, getScholarshipShareMessage } from '../services/scholarshipService';
 import { checkAndAwardBadges } from '../services/badgeService';
 import BadgeCelebration from '../components/BadgeCelebration';
+import AppHeader from '../components/AppHeader';
+import GlowButton from '../components/GlowButton';
 
 export default function ScholarshipScreen() {
     const router = useRouter();
@@ -142,10 +144,13 @@ export default function ScholarshipScreen() {
             <LinearGradient colors={['#003366', '#001933']} style={styles.container}>
                 <StatusBar style="light" backgroundColor="#003366" />
 
-                <TouchableOpacity onPress={handleBack} style={styles.backButtonTop}>
-                    <Text style={styles.backEmoji}>←</Text>
-                    <Text style={styles.backText}>Back</Text>
-                </TouchableOpacity>
+                <AppHeader
+                    leftAction={{ label: 'ہوم', icon: 'home-outline', onPress: () => router.replace('/') }}
+                    rightAction={{ label: 'واپس', icon: 'arrow-back', onPress: handleBack }}
+                    titleMain="Urdu"
+                    titleAccent="Ai"
+                    subtitle="Google AI Scholarship"
+                />
 
                 <View style={styles.successWrapper}>
                     <View style={styles.celebrationCircle}>
@@ -175,10 +180,12 @@ export default function ScholarshipScreen() {
                         </Text>
                     </View>
 
-                    <TouchableOpacity style={styles.shareButton} onPress={handleShare}>
-                        <Ionicons name="share-social" size={20} color="#003366" style={{ marginRight: 8 }} />
-                        <Text style={styles.shareButtonText}>Share with Friends / دوستوں کو بتائیں</Text>
-                    </TouchableOpacity>
+                    <GlowButton
+                        label="دوستوں کے ساتھ شیئر کریں"
+                        icon="share-social"
+                        onPress={handleShare}
+                        style={styles.shareButton}
+                    />
 
                     <Text style={styles.shareSubtitle}>
                         Tell your friends about free Google AI certification through Urdu AI!
@@ -193,31 +200,20 @@ export default function ScholarshipScreen() {
         <LinearGradient colors={['#003366', '#001933']} style={styles.container}>
             <StatusBar style="light" backgroundColor="#003366" />
 
-            {/* Header Area */}
-            <View style={styles.header}>
-                <TouchableOpacity onPress={handleBack} style={styles.mainBackButton}>
-                    <Text style={styles.backEmoji}>←</Text>
-                </TouchableOpacity>
+            <AppHeader
+                leftAction={{ label: 'ہوم', icon: 'home-outline', onPress: () => router.replace('/') }}
+                rightAction={{ label: 'واپس', icon: 'arrow-back', onPress: handleBack }}
+                titleMain="Urdu"
+                titleAccent="Ai"
+                subtitle="Google AI Professional Certificate"
+            />
 
-                <View style={styles.logoRow}>
-                    <Text style={styles.headerLogoUrdu}>
-                        Urdu <Text style={styles.headerLogoAi}>AI</Text>
-                    </Text>
-                    <Ionicons name="add" size={24} color="rgba(255,255,255,0.5)" style={{ marginHorizontal: 10 }} />
-                    <Ionicons name="logo-google" size={30} color="#4285F4" />
-                </View>
-
-                <Text style={styles.headerTitleEn}>Google AI Professional Certificate</Text>
-                <Text style={styles.headerTitleUr}>گوگل AI پروفیشنل سرٹیفیکیشن</Text>
-
+            <ScrollView contentContainerStyle={styles.scrollContent}>
                 {spotsInfo && spotsInfo.displayText && (
                     <View style={styles.spotsBadge}>
                         <Text style={styles.spotsText}>{spotsInfo.displayText}</Text>
                     </View>
                 )}
-            </View>
-
-            <ScrollView contentContainerStyle={styles.scrollContent}>
 
                 {/* Status Banner */}
                 {isUnlocked ? (
@@ -240,13 +236,13 @@ export default function ScholarshipScreen() {
                             <Text style={styles.lockedTitle}>Complete Urdu AI Master Class to unlock FREE Google AI Scholarship!</Text>
                             <Text style={styles.lockedTitleUrdu}>پہلے Urdu AI ماسٹر کلاس مکمل کریں، پھر مفت سکالرشپ حاصل کریں</Text>
 
-                            <TouchableOpacity
-                                style={styles.startCourseBtn}
+                            <GlowButton
+                                label="کورس شروع کریں"
+                                icon="school-outline"
                                 onPress={() => router.push('/courses')}
-                            >
-                                <Text style={styles.startCourseBtnText}>Start Urdu AI Course →</Text>
-                                <Text style={styles.startCourseBtnTextUrdu}>کورس شروع کریں</Text>
-                            </TouchableOpacity>
+                                size="md"
+                                style={styles.startCourseBtn}
+                            />
                         </View>
                     </View>
                 )}
@@ -293,10 +289,11 @@ export default function ScholarshipScreen() {
             {/* Sticky Bottom Apply Action */}
             {isUnlocked && (
                 <View style={styles.stickyFooter}>
-                    <TouchableOpacity style={styles.applyStickyBtn} onPress={handleApplyTap}>
-                        <Text style={styles.applyStickyBtnLabel}>✨ Apply for Scholarship</Text>
-                        <Text style={styles.applyStickyBtnUrdu}>سکالرشپ کے لیے درخواست دیں</Text>
-                    </TouchableOpacity>
+                    <GlowButton
+                        label="سکالرشپ کے لیے درخواست دیں"
+                        icon="sparkles-outline"
+                        onPress={handleApplyTap}
+                    />
                 </View>
             )}
 
@@ -405,25 +402,7 @@ export default function ScholarshipScreen() {
 const styles = StyleSheet.create({
     container: { flex: 1, backgroundColor: '#003366' },
 
-    // Header
-    header: {
-        paddingTop: Platform.OS === 'ios' ? 60 : 50,
-        paddingBottom: 20,
-        alignItems: 'center',
-        borderBottomWidth: 1,
-        borderBottomColor: 'rgba(255,255,255,0.1)',
-        backgroundColor: 'rgba(0,0,0,0.2)'
-    },
-    backButtonTop: { position: 'absolute', top: Platform.OS === 'ios' ? 60 : 50, left: 20, zIndex: 10, flexDirection: 'row', alignItems: 'center' },
-    mainBackButton: { position: 'absolute', top: Platform.OS === 'ios' ? 60 : 50, left: 20, zIndex: 10, padding: 5 },
-    backEmoji: { color: '#FFD700', fontSize: 22, marginRight: 4, fontWeight: 'bold' },
-    backText: { color: '#fff', fontSize: 16, fontFamily: 'Montserrat-Regular' },
-    logoRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 15 },
-    headerLogoUrdu: { color: '#FFF', fontFamily: 'Montserrat-Bold', fontSize: 24, letterSpacing: 1, fontWeight: '900' },
-    headerLogoAi: { color: '#FFD700', fontFamily: 'Montserrat-Bold', fontSize: 24, letterSpacing: 1, fontWeight: '900' },
-    headerTitleEn: { color: '#FFF', fontFamily: 'Montserrat-Bold', fontSize: 18, textAlign: 'center' },
-    headerTitleUr: { color: '#FFD700', fontFamily: 'Montserrat-Regular', fontSize: 16, marginTop: 4, textAlign: 'center' },
-    spotsBadge: { marginTop: 15, backgroundColor: 'rgba(255, 215, 0, 0.15)', paddingHorizontal: 15, paddingVertical: 6, borderRadius: 20, borderWidth: 1, borderColor: 'rgba(255, 215, 0, 0.5)' },
+    spotsBadge: { marginTop: 18, marginBottom: 8, backgroundColor: 'rgba(255, 215, 0, 0.15)', paddingHorizontal: 15, paddingVertical: 6, borderRadius: 20, borderWidth: 1, borderColor: 'rgba(255, 215, 0, 0.5)', alignSelf: 'center' },
     spotsText: { color: '#FFD700', fontFamily: 'Montserrat-Bold', fontSize: 13 },
 
     scrollContent: { padding: 16, paddingBottom: 120 },
@@ -438,9 +417,7 @@ const styles = StyleSheet.create({
     lockedBanner: { flexDirection: 'row', backgroundColor: 'rgba(255, 215, 0, 0.05)', padding: 20, borderRadius: 12, borderWidth: 1, borderColor: 'rgba(255,215,0,0.3)', marginBottom: 20, alignItems: 'center' },
     lockedTitle: { color: '#FFF', fontFamily: 'Montserrat-Bold', fontSize: 14, lineHeight: 22 },
     lockedTitleUrdu: { color: '#FFD700', fontFamily: 'Montserrat-Regular', fontSize: 14, textAlign: 'right', marginTop: 5, marginBottom: 15 },
-    startCourseBtn: { backgroundColor: '#FFD700', paddingVertical: 12, paddingHorizontal: 15, borderRadius: 8, alignItems: 'center' },
-    startCourseBtnText: { color: '#003366', fontFamily: 'Montserrat-Bold', fontSize: 14 },
-    startCourseBtnTextUrdu: { color: '#003366', fontFamily: 'Montserrat-Regular', fontSize: 12, marginTop: 2 },
+    startCourseBtn: { marginTop: 12 },
 
     // Course List
     courseListWrapper: { paddingVertical: 10 },
@@ -464,9 +441,6 @@ const styles = StyleSheet.create({
 
     // Sticky Footer
     stickyFooter: { position: 'absolute', bottom: 0, left: 0, right: 0, padding: 20, paddingTop: 15, backgroundColor: 'rgba(0, 25, 51, 0.95)', borderTopWidth: 1, borderTopColor: 'rgba(255,255,255,0.1)' },
-    applyStickyBtn: { backgroundColor: '#FFD700', paddingVertical: 15, borderRadius: 30, alignItems: 'center', elevation: 5, shadowColor: '#000', shadowOffset: { width: 0, height: -2 }, shadowOpacity: 0.3, shadowRadius: 5 },
-    applyStickyBtnLabel: { color: '#003366', fontFamily: 'Montserrat-Bold', fontSize: 16 },
-    applyStickyBtnUrdu: { color: '#003366', fontFamily: 'Montserrat-Regular', fontSize: 14, marginTop: 2 },
 
     // Modal Details
     modalOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.8)', justifyContent: 'flex-end' },
@@ -503,7 +477,6 @@ const styles = StyleSheet.create({
     receiptBody: { color: '#FFF', fontFamily: 'Montserrat-Regular', fontSize: 15, textAlign: 'center', lineHeight: 22, marginBottom: 10 },
     receiptBodyUrdu: { color: 'rgba(255,255,255,0.7)', fontFamily: 'Montserrat-Regular', fontSize: 14, textAlign: 'center' },
 
-    shareButton: { backgroundColor: '#FFD700', width: '100%', flexDirection: 'row', paddingVertical: 18, borderRadius: 30, alignItems: 'center', justifyContent: 'center', marginBottom: 15 },
-    shareButtonText: { color: '#003366', fontFamily: 'Montserrat-Bold', fontSize: 16 },
+    shareButton: { width: '100%', marginBottom: 15 },
     shareSubtitle: { color: 'rgba(255,255,255,0.5)', fontFamily: 'Montserrat-Regular', fontSize: 12, textAlign: 'center', paddingHorizontal: 20, lineHeight: 18 }
 });

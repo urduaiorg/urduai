@@ -11,6 +11,7 @@ import { getBadgesForDisplay, checkAndAwardBadges } from '../services/badgeServi
 import { getStreakData } from '../services/streakService';
 import { getEngagementStats } from '../services/engagementStats';
 import BadgeCelebration from '../components/BadgeCelebration';
+import AppHeader from '../components/AppHeader';
 
 interface Badge {
   id: string;
@@ -196,22 +197,13 @@ export default function AchievementsScreen() {
     <LinearGradient colors={['#003366', '#001933']} style={styles.container}>
       <StatusBar style="light" backgroundColor="#003366" />
 
-      <View style={styles.header}>
-        <TouchableOpacity onPress={handleBack} style={styles.backButton}>
-          <Text style={styles.backEmoji}>←</Text>
-          <Text style={styles.backText}>واپس</Text>
-        </TouchableOpacity>
-
-        <Text style={styles.headerTitle}>
-          <Text style={styles.headerBrandUrdu}>Urdu </Text>
-          <Text style={styles.headerBrandAi}>Ai</Text>
-        </Text>
-
-        <TouchableOpacity onPress={handleHome} style={styles.homeButton}>
-          <Ionicons name="home-outline" size={18} color="#FFD700" />
-          <Text style={styles.homeText}>ہوم</Text>
-        </TouchableOpacity>
-      </View>
+      <AppHeader
+        leftAction={{ label: 'ہوم', icon: 'home-outline', onPress: handleHome }}
+        rightAction={{ label: 'واپس', icon: 'arrow-back', onPress: handleBack }}
+        titleMain="Urdu"
+        titleAccent="Ai"
+        subtitle="Learning Progress Dashboard"
+      />
 
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <LinearGradient colors={['rgba(255,215,0,0.20)', 'rgba(255,255,255,0.05)']} style={styles.heroCard}>
@@ -264,58 +256,6 @@ export default function AchievementsScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  header: {
-    paddingTop: 50,
-    paddingBottom: 14,
-    paddingHorizontal: 16,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.1)',
-  },
-  backButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    width: 86,
-  },
-  backEmoji: {
-    color: '#FFD700',
-    fontSize: 18,
-    marginRight: 8,
-  },
-  backText: {
-    color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: '700',
-    includeFontPadding: false,
-  },
-  headerTitle: {
-    textAlign: 'center',
-  },
-  headerBrandUrdu: {
-    color: '#FFFFFF',
-    fontFamily: 'Montserrat-Bold',
-    fontSize: 21,
-  },
-  headerBrandAi: {
-    color: '#FFD700',
-    fontFamily: 'Montserrat-Bold',
-    fontSize: 21,
-  },
-  homeButton: {
-    width: 86,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    gap: 6,
-  },
-  homeText: {
-    color: '#FFFFFF',
-    fontSize: 15,
-    fontWeight: '700',
-    includeFontPadding: false,
-  },
   scrollContent: {
     padding: 16,
     paddingBottom: 60,
