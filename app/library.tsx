@@ -248,9 +248,9 @@ export default function LibraryScreen() {
             <AppHeader
                 leftAction={{ label: 'ہوم', icon: 'home-outline', onPress: () => router.replace('/') }}
                 rightAction={{ label: 'واپس', icon: 'arrow-back', onPress: handleBack }}
-                titleMain="AI"
-                titleAccent="Library"
-                subtitle="9 Free Guides • Read Offline"
+                titleMain="Guide"
+                titleAccent="Pages"
+                subtitle="9 PDF Guides • Offline Reading"
             />
 
             <ScrollView contentContainerStyle={styles.scrollContent}>

@@ -48,6 +48,10 @@ export default function BookmarksScreen() {
 
     const handleOpenBookmark = (url: string) => {
         Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+        if (url === 'urduai://home') {
+            router.replace('/');
+            return;
+        }
         if (url.includes('youtube.com') || url.includes('youtu.be')) {
             router.push({ pathname: '/youtube-player', params: { url } });
         } else {

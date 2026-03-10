@@ -139,12 +139,12 @@ export default function CoursesCatalogScreen() {
             <Text style={styles.heroTitle}>اپنا AI سیکھنے کا راستہ منتخب کریں</Text>
             <Text style={styles.heroSubtitle}>اپنے لیے درست کورس چنیں</Text>
             <Text style={styles.heroBody}>
-              پہلے مرکزی سرٹیفائیڈ ماسٹر کلاس سے آغاز کریں، پھر آٹومیشن، ویب ڈویلپمنٹ، اور خاندان کے لیے موزوں AI سیکھنے کی طرف بڑھیں۔
+              پہلے Urdu Ai Master Class سے آغاز کریں، پھر آٹومیشن، ویب ڈویلپمنٹ، اور خاندان کے لیے موزوں AI سیکھنے کی طرف بڑھیں۔
             </Text>
 
             {flagshipCourse ? (
               <GlowButton
-                label="مرکزی ماسٹر کلاس جاری رکھیں"
+                label="Urdu Ai Master Class جاری رکھیں"
                 icon="ribbon"
                 onPress={() => handleOpenCourse(flagshipCourse.id)}
                 style={styles.heroAction}
@@ -244,7 +244,7 @@ export default function CoursesCatalogScreen() {
           >
             <LinearGradient colors={['rgba(76,175,80,0.18)', 'rgba(255,255,255,0.04)']} style={styles.scholarshipGradient}>
               <Ionicons name="school" size={28} color="#4CD964" style={{ marginBottom: 12 }} />
-              <Text style={styles.scholarshipTitle}>Google AI اسکالرشپ کا راستہ</Text>
+              <Text style={styles.scholarshipTitle}>گوگل اے آئی اسکالرشپ کا راستہ</Text>
               <Text style={styles.scholarshipBody}>
                 مرکزی ماسٹر کلاس اب بھی سرٹیفکیٹ اور اسکالرشپ تک رسائی کا آپ کا بہترین راستہ ہے۔
               </Text>
