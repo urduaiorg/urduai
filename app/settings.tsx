@@ -156,10 +156,10 @@ export default function SettingsScreen() {
 
                     <Text style={styles.sectionHeader}>ایپ کے بارے میں / About App</Text>
                     <View style={styles.card}>
-                        <TouchableOpacity style={styles.linkItem} onPress={() => Alert.alert('Version', 'Urdu AI Web Wrapper\nVersion 3.0.8')}>
+                        <TouchableOpacity style={styles.linkItem} onPress={() => Alert.alert('Version', 'Urdu AI Web Wrapper\nVersion 3.0.1')}>
                             <Ionicons name="information-circle-outline" size={24} color="#8899A6" />
                             <Text style={styles.linkText}>App Version</Text>
-                            <Text style={styles.versionText}>3.0.8</Text>
+                            <Text style={styles.versionText}>3.0.1</Text>
                         </TouchableOpacity>
                     </View>
 

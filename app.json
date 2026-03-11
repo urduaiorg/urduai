@@ -1,27 +1,17 @@
 {
   "expo": {
-    "name": "Urdu AI - Pakistan's First AI Learning App",
-    "slug": "urdu-ai",
-    "version": "3.0.9",
+    "name": "UrduAIWebWrapperFixed",
+    "slug": "UrduAIWebWrapperFixed",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "urdu-ai",
+    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.yourname.urduaiwebwrapperfixed"
+      "supportsTablet": true
     },
     "android": {
-      "package": "com.yourname.urduaiwebwrapperfixed",
-      "blockedPermissions": [
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE",
-        "android.permission.SYSTEM_ALERT_WINDOW",
-        "android.permission.READ_MEDIA_IMAGES",
-        "android.permission.READ_MEDIA_VIDEO",
-        "android.permission.READ_MEDIA_AUDIO"
-      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"

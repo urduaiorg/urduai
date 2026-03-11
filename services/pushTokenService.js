@@ -23,7 +23,7 @@ export const syncTokenToBackend = async (token) => {
         await firestore().collection('push_tokens').doc(token).set({
             token,
             platform: Platform.OS,
-            app_version: '3.0.8',
+            app_version: '3.0.1',
             registered_at: firestore.FieldValue.serverTimestamp(),
             last_active: firestore.FieldValue.serverTimestamp(),
         });

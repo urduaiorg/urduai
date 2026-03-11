@@ -1,0 +1,39 @@
+// All of the requested modules are loaded behind enumerable getters.
+const map = Object.defineProperties({}, {
+  "./(tabs)/_layout.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/(tabs)/_layout.tsx"); } },
+  "./(tabs)/explore.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/(tabs)/explore.tsx"); } },
+  "./(tabs)/index.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/(tabs)/index.tsx"); } },
+  "./+not-found.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/+not-found.tsx"); } },
+  "./_layout.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/_layout.tsx"); } },
+  "./achievements.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/achievements.tsx"); } },
+  "./ai-videis.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/ai-videis.tsx"); } },
+  "./ai-videos.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/ai-videos.tsx"); } },
+  "./article-reader.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/article-reader.tsx"); } },
+  "./bookmarks.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/bookmarks.tsx"); } },
+  "./certificate.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/certificate.tsx"); } },
+  "./course-player.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/course-player.tsx"); } },
+  "./courses.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/courses.tsx"); } },
+  "./index.js": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/index.js"); } },
+  "./library.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/library.tsx"); } },
+  "./onboarding.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/onboarding.tsx"); } },
+  "./quiz.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/quiz.tsx"); } },
+  "./scholarship.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/scholarship.tsx"); } },
+  "./settings.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/settings.tsx"); } },
+  "./youtube-player.tsx": { enumerable: true, get() { return require("/Users/qroonjha/CascadeProjects/UrduAIWebWrapperFixed-android-clean/app/youtube-player.tsx"); } },
+});
+
+function metroContext(request) {
+    return map[request];
+}
+
+// Return the keys that can be resolved.
+metroContext.keys = function metroContextKeys() {
+  return Object.keys(map);
+};
+
+// Return the module identifier for a user request.
+metroContext.resolve = function metroContextResolve(request) {
+  throw new Error('Unimplemented Metro module context functionality');
+}
+
+module.exports = metroContext;

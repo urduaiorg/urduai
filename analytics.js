@@ -17,7 +17,7 @@ export const logEvent = async (eventName, parameters = {}) => {
     await analytics().logEvent(eventName, {
       ...parameters,
       platform: Platform.OS,
-      app_version: '3.0.8',
+      app_version: '3.0.1',
     });
   } catch (error) {
     // silent

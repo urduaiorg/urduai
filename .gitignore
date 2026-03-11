@@ -8,8 +8,6 @@ node_modules/
 dist/
 web-build/
 expo-env.d.ts
-.bundle-test/
-.backup_recovered/
 
 # Native
 *.orig.*
@@ -26,14 +24,10 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
-android/.gradle/
-android/build/
-android/app/build/
 
 # macOS
 .DS_Store
 *.pem
-.idea/
 
 # local env files
 .env*.local
@@ -47,4 +41,3 @@ app-example
 credentials.json
 *.keystore
 google-services.json
-keystore.properties
